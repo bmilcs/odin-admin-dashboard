@@ -1,7 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap");
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --clr-red: hsl(355, 54%, 44%);
+  --clr-neutral-700: hsl(0, 0%, 28%);
+  --clr-neutral-200: hsl(60, 22%, 84%);
+  --clr-accent: hsl(40, 89%, 55%);
+  --clr-neutral-900: hsl(0, 0%, 0%);
+  --font-primary: "Fira Sans", sans-serif;
+  --box-shadow: 6px 4px 8px var(--clr-neutral-700);
 }
