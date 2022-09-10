@@ -32,7 +32,7 @@
 nav,
 header,
 main {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 h1,
@@ -61,7 +61,7 @@ input {
 body {
   display: grid;
   grid-template-columns: minmax(max-content, 20rem) minmax(830px, 1fr);
-  grid-template-rows: 13rem 1fr;
+  grid-template-rows: 14rem 1fr;
   grid-template-areas:
     "nav header"
     "nav main";
@@ -171,12 +171,15 @@ header {
     }
 
     .button-container {
+      width: min(600px, 100%);
       justify-self: end;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 2vw;
+      justify-content: space-evenly;
+      gap: 1rem;
 
       button {
+        max-width: 9rem;
         margin-block: 1rem;
         padding: 0.75rem 1.5rem;
         background: var(--clr-orange);
