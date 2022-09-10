@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -8,15 +8,15 @@
 }
 
 :root {
-  --clr-neutral-900: hsl(280, 9%, 15%);
-  --clr-neutral-800: hsl(280, 9%, 20%);
+  --clr-neutral-900: hsl(240, 17%, 12%);
+  --clr-neutral-800: hsl(212, 14%, 19%);
   --clr-neutral-200: hsl(0, 0%, 88%);
-  --clr-neutral-100: hsl(156, 100%, 99%);
+  --clr-neutral-100: hsl(96, 71%, 99%);
   --clr-shadow: hsla(280, 9%, 20%, 20%);
-  --clr-blue: hsl(210, 77%, 57%);
-  --clr-green: hsl(78, 69%, 50%);
-  --clr-orange: hsl(19, 95%, 64%);
-  --font-primary: "Open Sans", sans-serif;
+  --clr-blue: hsl(201, 85%, 38%);
+  --clr-green: hsl(332, 82%, 41%);
+  --clr-orange: hsl(29, 89%, 58%);
+  --font-primary: "Inter", sans-serif;
   --box-shadow: 0px 0px 8px var(--clr-shadow);
   /* set defaults */
   font-family: var(--font-primary);
@@ -95,8 +95,8 @@ header .header-top img {
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
-header .header-top input[type=text] {
-  width: max(16rem, 90%);
+header .header-top input[type="text"] {
+  width: clamp(16rem, 90%, 55rem);
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 1rem;
@@ -118,7 +118,7 @@ header .header-bottom .introduction-container {
   grid-template-columns: max-content max-content;
   align-items: center;
   -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
 }
 header .header-bottom h3 {
   align-self: end;
@@ -132,7 +132,7 @@ header .header-bottom img {
   aspect-ratio: 1/1;
   border-radius: 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 header .header-bottom .button-container {
   justify-self: end;
@@ -143,9 +143,9 @@ header .header-bottom .button-container {
 header .header-bottom .button-container button {
   margin-block: 1rem;
   padding: 0.75rem 1.5rem;
-  background: var(--clr-orange);
+  background: var(--clr-green);
   color: var(--clr-neutral-100);
-  border-radius: 1rem;
+  border-radius: 100vw;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -172,6 +172,10 @@ nav p {
 }
 nav svg {
   height: 1.75rem;
+}
+nav .settings-svg,
+nav .settings-svg + p {
+  margin-top: 2.5rem;
 }
 nav .dashboard-svg {
   justify-self: center;
@@ -206,7 +210,8 @@ main .project {
   display: flex;
   flex-direction: column;
 }
-main .project:hover, main .project:focus {
+main .project:hover,
+main .project:focus {
   transform: scale(1.05);
   transition: transform 0.15s ease-in-out;
 }
@@ -264,7 +269,7 @@ main .trending-container img {
   width: 4rem;
   border-radius: 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 main .card {
   background: var(--clr-neutral-100);
@@ -273,5 +278,5 @@ main .card {
   box-shadow: var(--box-shadow);
 }
 main .project {
-  border-left: 0.75rem solid var(--clr-green);
-}/*# sourceMappingURL=style.css.map */
+  border-left: 0.75rem solid var(--clr-orange);
+} /*# sourceMappingURL=style.css.map */

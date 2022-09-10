@@ -120,7 +120,7 @@ header {
     }
 
     input[type="text"] {
-      width: max(16rem, 90%);
+      width: clamp(16rem, 90%, 55rem);
       padding: 0.5rem 1rem;
       font-size: 1rem;
       border-radius: 1rem;
@@ -176,7 +176,7 @@ header {
         padding: 0.75rem 1.5rem;
         background: var(--clr-orange);
         color: var(--clr-neutral-100);
-        border-radius: 1rem;
+        border-radius: 100vw;
         font-size: 1rem;
         font-weight: bold;
       }
@@ -214,6 +214,11 @@ nav {
 
   svg {
     height: 1.75rem;
+  }
+
+  .settings-svg,
+  .settings-svg + p {
+    margin-top: 2.5rem;
   }
 
   .dashboard-svg {
