@@ -28,7 +28,7 @@ In addition to Grid, I also experimented with SASS, a CSS pre-processor, for the
 ## Links
 
 - [Live Demo](https://bmilcs.github.io/odin-admin-dashboard/)
-- [My Odin Project Progress](https://github.com/bmilcs/op)
+- [My Odin Project Progress](https://github.com/bmilcs/odin-project)
 
 ## Screenshots
 
